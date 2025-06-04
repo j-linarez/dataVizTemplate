@@ -10,5 +10,6 @@ c = (alt.Chart(chart_data)
      .encode(x="a",y="b",size = "c", color = "c",tooltip = ["a","b","c"])
 
      )
-
+#set the title of the chart
+c = c.properties(title="Scatter Plot with Altair")
 st.altair_chart(c)
